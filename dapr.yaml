@@ -1,0 +1,17 @@
+version: 1
+common: # optional section for variables shared across apps
+  enableApiLogging: true
+  enableAppHealthCheck: false
+  daprHTTPMaxRequestSize: 4
+  logLevel: debug
+  env: # any environment variable shared across apps
+    DEBUG: true
+apps:
+  - appDirPath: ./orderProcessor/
+    appID: order-processor
+    appPort: 7002
+    command: ["dotnet", "run"]
+  - appID: checkout
+    appDirPath: ./checkout/
+    command: ["dotnet", "run"]
+    appPort: 7001

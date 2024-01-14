@@ -1,0 +1,33 @@
+# tye application configuration file
+# read all about it at https://github.com/dotnet/tye
+#
+# when you've given us a try, we'd love to know what you think:
+#    https://aka.ms/AA7q20u
+#
+name: zeiss-P0
+extensions:
+- name: seq
+  logPath: ./.seq
+# - name: zipkin
+- name: dapr
+  config: tye_dapr_config    
+  http-max-request-size: 4
+  placement-image: daprio/dapr
+  log-level: debug
+  components-path: "./dapr/"
+services:
+
+- name: order-processor
+  project: ./orderProcessor/orderProcessor.csproj
+  bindings:
+  - name: "order-processor-http"
+    port: 7002
+    protocol: http        
+
+- name: checkout
+  project: ./checkout/checkout.csproj
+  bindings:
+  - name: "checkout-http"
+    port: 7001
+    protocol: http             
+

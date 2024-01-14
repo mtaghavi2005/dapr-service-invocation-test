@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout", "Checkout\Checkout.csproj", "{9CC59CAD-4F71-4185-A2D6-2B065823A5F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessor", "OrderProcessor\OrderProcessor.csproj", "{7E94E9CF-EFDB-44F6-923B-9303352049C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CC59CAD-4F71-4185-A2D6-2B065823A5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC59CAD-4F71-4185-A2D6-2B065823A5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC59CAD-4F71-4185-A2D6-2B065823A5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC59CAD-4F71-4185-A2D6-2B065823A5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E94E9CF-EFDB-44F6-923B-9303352049C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E94E9CF-EFDB-44F6-923B-9303352049C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E94E9CF-EFDB-44F6-923B-9303352049C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E94E9CF-EFDB-44F6-923B-9303352049C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {815FE71D-CB18-43F1-8C46-E252FCFC02B9}
+	EndGlobalSection
+EndGlobal
